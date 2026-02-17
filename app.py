@@ -1,7 +1,12 @@
-import streamlit as st
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from utils.parser import read_docx
 from utils.earnings_tool import run_earnings_tool
 from utils.financials_tool import run_financials_tool
+
 
 st.set_page_config(page_title="Elite AI Research Portal", layout="wide")
 
